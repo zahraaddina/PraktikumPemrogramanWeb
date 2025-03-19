@@ -1,2 +1,2 @@
 # PraktikumPemrogramanWeb
-Untuk memenuhi tugas kuliah Pra
+Untuk memenuhi tugas kuliah Praktikum Pemrograman berbasis Web
