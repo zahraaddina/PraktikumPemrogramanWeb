@@ -9,10 +9,10 @@
     <h1 align ="center">Website Addina</h1>  <!-- align untuk ketengah -->
     <hr size="1px" color="red"> <!-- hr untuk garis -->
     <nav align="center"> <!-- navbar -->
-        <a href="index.html"> HOME</a> |
-        <a href="profile.html">PROFILE</a>
-        <a href="about.html">ABOUT ME</a>
-        <a href="login.html">LOGIN</a>
+        <a href="index.php"> HOME</a> |
+        <a href="profile.php">PROFILE</a>
+        <a href="about.php">ABOUT ME</a>
+        <a href="login.php">LOGIN</a>
     </nav>
     <h2> Daftar Asrama Harry Potter</h2>
     <table border="1px" cellspacing="0" cellpading="15px" width="50%">
