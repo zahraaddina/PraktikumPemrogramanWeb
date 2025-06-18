@@ -25,6 +25,7 @@ require 'function.php';
 </head>
 <body>
     <h1>Data Mahasiswa</h1>
+    <a href="tambahdata.php"><button style ="margin-bottom: 12px; background-color: pink;">Tambah Data Mahasiswa</button></a>
     <table border="1" cellpadding="10" cellspacing="0">    
         <tr>
             <th>No</th>
@@ -33,6 +34,7 @@ require 'function.php';
             <th>NIM</th>
             <th>Jurusan</th>
             <th>No. Hp</th>
+            <th>Aksi</th>
         </tr>
 
         <?php 
@@ -45,6 +47,7 @@ require 'function.php';
             <td><?= $mhs["nim"] ?></td>
             <td><?= $mhs["jurusan"] ?></td>
             <td><?= $mhs["nohp"] ?></td>
+            <td><a href="hapusdata.php/?id=<?>=$mhs["id"]?>"><button style ="margin-bottom: 12px; background-color: pink;">Hapus</button></a></td>
             
         </tr>
         <?php $i++; } ?>
