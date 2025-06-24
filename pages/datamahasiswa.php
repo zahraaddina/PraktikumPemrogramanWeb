@@ -42,12 +42,13 @@ require 'function.php';
         foreach ($rows as $mhs) { ?>
         <tr>
             <td><?= $i ?></td>
-            <td><img src="images/<?= $mhs["foto"] ?>" alt="Foto" width="60" /></td>
+            <td><img src="../images/<?= $mhs["foto"] ?>" width="60"/></td>
             <td><?= $mhs["nama"] ?></td>
             <td><?= $mhs["nim"] ?></td>
             <td><?= $mhs["jurusan"] ?></td>
             <td><?= $mhs["nohp"] ?></td>
-            <td><a href="hapusdata.php/?id=<?>=$mhs["id"]?>"><button style ="margin-bottom: 12px; background-color: pink;">Hapus</button></a></td>
+            <td><a href="hapusdata.php?id=<?= $mhs["id"] ?>"><button>Hapus</button></a></td>
+            
             
         </tr>
         <?php $i++; } ?>

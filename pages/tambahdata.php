@@ -1,32 +1,23 @@
 <?php
-
 require 'function.php';
- 
 
-
-if(isset($_POST["submit"]))
-{
-   if(tambahmahasiswa($_POST)>0);
-    { 
+if (isset($_POST['submit'])) {
+    if (tambahdata($_POST) > 0) {
         echo "
         <script>
             alert('Data berhasil ditambahkan!');
             document.location.href = 'datamahasiswa.php';
-            </script>";
-
-    }
-    else
-    {
-        echo <script>
+        </script>";
+    } else {
+        echo "
+        <script>
             alert('Data gagal ditambahkan!');
             document.location.href = 'datamahasiswa.php';
-            </script>";
-
-            mysqli_error($koneksi);
+        </script>";
     }
 }
-
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -50,7 +41,10 @@ if(isset($_POST["submit"]))
 
         <label for ="nohp">No. Hp:</label>
         <input type="text" name="nohp" id="nohp"/> <br>
-    
+
+        <label for="foto">Foto:</label>
+        <input type="file" name="submit" id="foto"/> <br>
+        
         <button type="submit" name="submit">Tambah</button>
 </body>
 </html>
